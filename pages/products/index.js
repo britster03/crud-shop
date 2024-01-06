@@ -28,7 +28,7 @@ export default function Products(props){
                 Price: ${productItem.price}
             </p>
         <div className="w-fit">
-            <button onClick={()=> router.push(`/products/${productItem.id}`)} 
+            <button onClick={()=> router.push(`https://crud-shop.vercel.app/products/${productItem.id}`)} 
             className="p-2 flex h-fit justify-between mt-3 mb-5 mx-10 border border-black rounded-md bg-yellow-500 hover:bg-yellow-600 text-white">
             View Details
             </button>
