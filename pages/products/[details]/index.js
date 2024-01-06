@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { Context } from "@/context";
 
 export async function getStaticPaths() {
-  const listOfProducts = getAllProducts();
+  const listOfProducts = await getAllProducts();
   const createdPaths =
     listOfProducts && listOfProducts.length > 0
       ? listOfProducts.map((item) => ({
@@ -12,10 +12,10 @@ export async function getStaticPaths() {
           },
         }))
       : [];
-
+  console.log('Generated Paths:', createdPaths);
   return {
     paths: createdPaths,
-    fallback: true,
+    fallback: false,
   };
 }
 
