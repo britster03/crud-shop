@@ -17,7 +17,6 @@ function GlobalState({ children }) {
     setCartItems(incCartItems)
   }
 
-  
 
   function removeFromCart(getCurrentId){
     console.log(getCurrentId);

@@ -19,7 +19,7 @@ export default function Checkout() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Process the form data (simulated API call)
+    //processing the form data
     const orderSummary = {
       items: cartItems,
       subtotal: cartItems.reduce((total, item) => total + item.price, 0),
@@ -29,7 +29,7 @@ export default function Checkout() {
       couponCode: formData.couponCode,
     };
 
-    // Display a confirmation message with the order summary
+    //displays a confirmation message with the order summary
     setOrderDetails(orderSummary);
   };
 

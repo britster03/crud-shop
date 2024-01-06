@@ -1,4 +1,4 @@
-//to show the complete list of products we will write a function
+//working with fake-store api
 
 
 export async function getAllProducts(){

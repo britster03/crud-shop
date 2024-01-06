@@ -8,7 +8,6 @@ export default function Header() {
 
   return (
     <ul className="flex p-5 gap-4 justify-between items-center text-white font-bold bg-black">
-      {/* "HappyCart" text in the left corner */}
       <div className="flex items-center">
         <Smile size={24} className="mr-2 text-yellow-500" />
         <span className="ml-1">Happy CART</span>
