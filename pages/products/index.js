@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 export async function getStaticProps() {
 //asynchronously fetches the list of products using the getAllProducts function
   const listOfProducts = await getAllProducts();
-
   return {
     props: {
       listOfProducts,

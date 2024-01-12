@@ -19,6 +19,10 @@ export default function Checkout() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!formData.name || !formData.address || !formData.paymentMode) {
+      console.error('Please fill out all required fields.');
+      return;
+    }
     //processing the form data
     const orderSummary = {
       items: cartItems,

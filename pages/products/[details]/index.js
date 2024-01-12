@@ -53,10 +53,10 @@ export async function getStaticProps(context) {
   const { details } = params; //extracts the details parameter from the context, which represents the product ID
   const productDetailsData = await getAllProductDetailsById(details); 
   //fetches the product details for the specified ID using getAllProductDetailsById(details)
-
+  console.log(productDetailsData);
   return {
     props: {
-      productDetailsData, 
+      productDetailsData 
     },
   };
 }

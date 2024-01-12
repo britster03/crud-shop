@@ -47,7 +47,7 @@ export default function Cart() {
 
       {cartItems && cartItems.length > 0
         ? cartItems.map((item) => (
-            <div className="flex w-80 mt-3 flex-col border border-black">
+            <div key={item.id} className="flex w-80 mt-3 flex-col border border-black">
               <img className="h-41" src={item.image} />
               <p className="text-center mt-3 font-bold">{item.title}</p>
               <p className="text-center mt-3">Price: ${item.price}</p>
